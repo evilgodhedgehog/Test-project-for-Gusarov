@@ -1,0 +1,212 @@
+header {
+    background: url("../images/bg.webp");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding-bottom: 3rem;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.875rem 0;
+}
+.header-top__column {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.25rem;
+}
+.header-top__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-top__logo svg {
+    fill:#fff;
+    width: 170px;
+    height: 25px;
+}
+.header-top__separator {
+    height: 2px;
+    width: 50px;
+    background-color: #fff;
+}
+.header-top__menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.75rem
+}
+.header-top__menu ul li a,
+.header-top__language,
+.header-top__currency,
+.header-top__phone {
+    color: #fff;
+    font-family: "Century Gothic";
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+.header-top__currency {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+}
+.header-top__currency svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}
+.header-top__button {
+    padding: 0.625rem 30px;
+    background: #FFCF5C;
+    color: #393333;
+    text-decoration: none;
+}
+.header-top__icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.25rem;
+}
+.header-top__icons ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+}
+.header-top__icons ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.header-top__icons ul li a svg,
+.menu-icon svg {
+    fill: #fff;
+    width: 100%;
+    height: 100%;
+}
+.menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.75rem;
+    height: 1.75rem;
+}
+.header__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.75rem;
+    padding: 0rem 5rem;
+}
+.header__body-caption {
+    font-family: 'TTFirs';
+    font-weight: 900;
+    font-size: 2.75rem;
+    color: #fff
+}
+.header__body-author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.25rem;
+}
+.author__image {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.author__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.author__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3625rem;
+}
+.author__name {
+    font-family: 'TTFirs';
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff
+}
+.author__position,
+.author__experience {
+    font-family: 'TTFirs';
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: #fff
+}
+.header__body-dates {
+    display: flex;
+    gap: 1rem;
+    color: #fff;
+    font-family: 'TTFirs';
+    font-weight: 300;
+}
+.header__body-dates b {
+    font-weight: 600;
+}
+.header__body-short-info {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.125rem;
+}
+.header__body-short-info li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.625rem;
+    height: 30px;
+}
+.header__body-short-info li span {
+    color: #fff;
+    font-family: "Century Gothic";
+    font-size: 1rem;
+    font-weight: 400;
+}
+.header__body-short-info li svg {
+    width: 100%;
+    height: 100%;
+    fill: #fff;
+    max-width: 30px;
+}
+.header__body-tags ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.625rem;
+}
+.header__body-tags ul li a {
+    padding: 0.375rem 1.25rem;
+    background: #FFCF5C;
+    color:#393333;
+    border-radius: 2.5rem;
+    text-decoration: none;
+}
