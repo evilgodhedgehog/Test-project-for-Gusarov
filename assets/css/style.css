@@ -175,24 +175,99 @@ header {
     align-items: center;
     gap: 3.125rem;
 }
-.header__body-short-info li {
+.header__body-short-info > li {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 0.625rem;
     height: 30px;
+    cursor: pointer;
 }
-.header__body-short-info li span {
+.header__body-short-info > li > span {
     color: #fff;
     font-family: "Century Gothic";
     font-size: 1rem;
     font-weight: 400;
 }
-.header__body-short-info li svg {
+.header__body-short-info > li > svg {
     width: 100%;
     height: 100%;
     fill: #fff;
     max-width: 30px;
+}
+.header__body-short-info .share {
+    position: relative;
+}
+.header__body-short-info .share:hover .share-window {
+    display: flex;
+}
+.share-window {
+    list-style-type: none;
+    margin: 0;
+    position: absolute;
+    top: 2rem;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    padding: 1.25rem;
+    width: 270px;
+    height: fit-content;
+    border: 1px solid #ccc
+}
+.share-window > li {
+    width: 100%;
+    padding: 0.5rem 0rem;
+}
+.share-window > li:first-child {
+    padding-top: 0;
+}
+.share-window > li:last-child {
+    padding-bottom: 0;
+}
+.share-window > li.vk svg {
+    fill: #2787F5;
+    width: 30px;
+    height: 30px;
+}
+.share-window > li.x svg {
+    fill: #000;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+.share-window > li.tg svg {
+    fill: #2ca5e0;
+    width: 30px;
+    height: 30px;
+}
+.share-window > li.ok svg {
+    fill: #f48420;
+    width: 30px;
+    height: 30px;
+}
+.share-window > li svg {
+    width: 30px;
+    height: 30px;
+    fill: #000;
+}
+.share-window > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.625rem;
+    text-decoration: none;
+}
+.share-window svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.share-window span {
+    font-family: "Century Gothic";
+    font-size: 1rem;
+    font-weight: 400;
+    color: #393333;
 }
 .header__body-tags ul {
     list-style-type: none;
