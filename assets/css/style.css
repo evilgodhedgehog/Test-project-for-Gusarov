@@ -264,6 +264,7 @@ header {
     align-items: center;
 }
 .share-window span {
+    display: block;
     font-family: "Century Gothic";
     font-size: 1rem;
     font-weight: 400;
@@ -284,4 +285,69 @@ header {
     color:#393333;
     border-radius: 2.5rem;
     text-decoration: none;
+}
+@media screen and (max-width: 991px) {
+    .header__body {
+        padding: 0 2rem;
+    }
+    .header__body-caption {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    .share-window {
+        left: -135px;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.85rem;
+    }
+    .share-window > li {
+        padding: 0.5rem 0rem;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .share-window > li:first-child {
+        padding-top: 0.5rem;
+    }
+    .share-window > li:last-child {
+        padding-bottom: 0.5rem;
+    }
+    .share-window span {
+        display: none;
+    }
+}
+@media screen and (max-width: 575px) {
+    .header-top,
+    .header__body {
+        padding: 1rem;
+    }
+    .header__body-caption {
+        font-size: 1.75rem;
+    }
+    .header__body-dates {
+        flex-direction: column;
+    }
+    .header__body-short-info {
+        display: grid;
+        grid-template-areas:
+            "a a a a"
+            "b c d e";
+        gap: 1rem;
+    }
+    .header__body-short-info > li:first-child {
+        grid-area: a;
+    }
+    .header__body-tags ul {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .header__body-tags ul li {
+        margin-top: 0.5rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .share-window {
+        left: -160px;
+    }
 }
